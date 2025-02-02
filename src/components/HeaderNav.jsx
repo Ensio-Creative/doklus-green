@@ -24,9 +24,9 @@ const HeaderNav = () => {
           <a href="#" className="text-[#001008]">
             SERVICES
           </a>
-          <a href="#" className="text-[#001008]">
+          <Link href="/sustainability" className="text-[#001008]">
             SUSTAINABILITY
-          </a>
+          </Link>
           <a href="#" className="text-[#001008]">
             CONTACT  US
           </a>
