@@ -27,9 +27,9 @@ const HeaderNav = () => {
           <Link href="/sustainability" className="text-[#001008]">
             SUSTAINABILITY
           </Link>
-          <a href="#" className="text-[#001008]">
+          <Link href="/contact" className="text-[#001008]">
             CONTACT  US
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}

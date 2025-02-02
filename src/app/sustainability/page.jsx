@@ -1,3 +1,4 @@
+import Accordion from '@/components/Accordion';
 import HeroComp from '@/components/HeroComp';
 import React from 'react';
 
@@ -14,6 +15,7 @@ const sustainability = () => {
 
           By integrating health, safety, and environmental sustainability into every facet of our business, we aim to create lasting value for our stakeholders while contributing to a more sustainable and resilient world. We continuously assess our practices to ensure alignment with the highest standards of sustainability, and we remain committed to transparent communication and accountability in our journey towards a healthier and more sustainable future for all.
         </div>
+        <Accordion />
       </section>
     </>
   );
