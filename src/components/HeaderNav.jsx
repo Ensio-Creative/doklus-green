@@ -1,5 +1,6 @@
 'use client'
 
+import { stringToSlug } from "@/utils/stringToSlug";
 import Link from "next/link";
 import React, { useState } from "react";
 // import { Menu, X } from "lucide-react";
@@ -10,7 +11,7 @@ const HeaderNav = () => {
   const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
 
   return (
-    <header className="bg-white sm:fixed w-full top-0 left-0 z-50">
+    <header className="bg-white fixed w-full top-0 left-0 z-50">
       <div className="container lg:px-14 mx-auto flex justify-between items-center p-4">
         {/* Logo */}
 
@@ -20,19 +21,20 @@ const HeaderNav = () => {
         {/* Desktop Menu */}
         <nav className="hidden md:flex text-sm space-x-6">
           <Link href="/" className="text-[#001008]">
-            HOME
+            <h2>HOME</h2>
           </Link>
           <Link href="/about" className="text-[#001008]">
-            ABOUT US
+            <h2>ABOUT US</h2>
           </Link>
-          <a href="#" className="text-[#001008]">
-            SERVICES
+          <a onClick={() => setShow(!show)} href="#" className="text-[#001008] flex">
+            <h2>SERVICES</h2>
+            <img className={`my-auto ml-3 ${show && 'rotate-180'}`} src="/images/Vector.png" alt="" />
           </a>
           <Link href="/sustainability" className="text-[#001008]">
-            SUSTAINABILITY
+            <h2>SUSTAINABILITY</h2>
           </Link>
           <Link href="/contact" className="text-[#001008]">
-            CONTACT  US
+            <h2>CONTACT  US</h2>
           </Link>
         </nav>
 
@@ -45,6 +47,12 @@ const HeaderNav = () => {
           {isOpen ? <img src="/images/close.png" alt="" /> : <img src="/images/bar.png" alt="" />}
         </button>
       </div>
+
+      {show && <div className="lg:fixed border-t border-[#E1E1E1]  sm:hidden left-0 right-0 top-16 grid grid-cols-4 gap-4 w-full bg-white px-20 py-10 z-30">
+        {services.map((single, index) => <div key={index} className="py-4 border-b border-[#009C3E]">
+          <Link onClick={() => setShow(!show)} href={`/services?page=${stringToSlug(single)}`}><h2>{single}</h2></Link>
+        </div>)}
+      </div>}
 
       {/* Mobile Menu */}
       {isOpen && (
@@ -64,7 +72,8 @@ const HeaderNav = () => {
               <h2>SERVICES</h2>
               <img className={`my-auto ml-6 ${show && 'rotate-180'}`} src="/images/caret.png" alt="" />
             </a>
-            {show && services.map((single, index) => <div key={index}><Link onClick={() => setIsOpen(!isOpen)} href={'/'} className="text-[#009C3E] text-sm">
+            {show && services.map((single, index) => <div key={index}><Link onClick={() => setIsOpen(!isOpen)}
+              href={`/services?page=${stringToSlug(single)}`} className="text-[#009C3E] text-sm">
               {single}
             </Link></div>)}
           </div>

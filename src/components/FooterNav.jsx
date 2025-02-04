@@ -1,7 +1,11 @@
+import { stringToSlug } from "@/utils/stringToSlug";
+import Link from "next/link";
 import React from "react";
 // import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const FooterNav = () => {
+  const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
+
   return (
     <footer className="bg-[#001008] lg:px-20 py-10">
       <div className="container mx-auto px-4">
@@ -20,10 +24,10 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">OUR COMPANY</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              <li><a href="#">About us</a></li>
+              <li><Link href="/about">About us</Link></li>
               <li><a href="#">Services</a></li>
-              <li><a href="#">Sustainability</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><Link href="/sustainability">Sustainability</Link></li>
+              <li><Link href="/contact">Contact us</Link></li>
             </ul>
           </div>
 
@@ -31,11 +35,11 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">QUICK LINKS</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              <li><a href="#">Real Estate</a></li>
-              <li><a href="#">Tank Calibration</a></li>
+              {services.slice(0, 5).map((single, index) => <li key={index}><Link href={`/services?page=${stringToSlug(single)}`}>{single}</Link></li>)}
+              {/* <li><a href="#">Tank Calibration</a></li>
               <li><a href="#">Tank Fabrication</a></li>
               <li><a href="#">Pressure Testing</a></li>
-              <li><a href="#">Leak Testing</a></li>
+              <li><a href="#">Leak Testing</a></li> */}
             </ul>
           </div>
 
@@ -43,11 +47,13 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">QUICK LINKS</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              <li><a href="#">Environmental Assessment</a></li>
+              {services.slice(5, services.length).map((single, index) => <li key={index}><Link href={`/services?page=${stringToSlug(single)}`}>{single}</Link></li>)}
+
+              {/* <li><a href="#">Environmental Assessment</a></li>
               <li><a href="#">Procurement</a></li>
               <li><a href="#">Project Management</a></li>
               <li><a href="#">SOP Report</a></li>
-              <li><a href="#">MISTDO Training</a></li>
+              <li><a href="#">MISTDO Training</a></li> */}
             </ul>
           </div>
 
