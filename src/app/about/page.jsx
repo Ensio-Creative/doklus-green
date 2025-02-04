@@ -26,7 +26,7 @@ const about = () => {
         <div className="text-center bg-[#009C3E] text-white lg:p-20 p-6 mt-20 text-center">
           <h2>OUR MISSION</h2>
           <div className="lg:w-1/2 mx-auto mt-4">
-            <p className="text-xl">To provide excellent and comprehensive business solutions and services, driven by technology, innovation, and well-trained personnel, to our clients: promoting environmental sustainability through the process.</p>
+            <p className="lg:text-xl">To provide excellent and comprehensive business solutions and services, driven by technology, innovation, and well-trained personnel, to our clients: promoting environmental sustainability through the process.</p>
           </div>
         </div>
       </section>

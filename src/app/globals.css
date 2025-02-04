@@ -17,6 +17,11 @@
   }
 } */
 
+
+* {
+  overflow-x: hidden;
+}
+
 body {
   /* color: var(--foreground);
   background: var(--background); */
@@ -27,7 +32,7 @@ h2 {
   font-family: "Space Mono", serif;
 }
 
-#commitment{
+#commitment {
   background: url('/images/pattern.png');
   background-color: #009C3E;
 }
