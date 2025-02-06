@@ -3,7 +3,7 @@
 import HeroComp from '@/components/HeroComp';
 import { unslug } from '@/utils/stringToSlug';
 import { useSearchParams } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 
 const service = () => {
   const services = [
@@ -234,12 +234,12 @@ const service = () => {
 
 
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <HeroComp img={service} text={findTitleInArray().title} />
       <section className='py-20 px-4 lg:w-[70%] mx-auto'>
         {findTitleInArray().content}
       </section>
-    </>
+    </Suspense>
   );
 };
 
