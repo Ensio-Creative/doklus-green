@@ -11,7 +11,7 @@ const HeaderNav = () => {
   const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
 
   return (
-    <header className="bg-white fixed w-full top-0 left-0 z-50">
+    <header className="bg-white fixed w-full top-0 left-0 z-10">
       <div className="container lg:px-14 mx-auto flex justify-between items-center p-4">
         {/* Logo */}
 

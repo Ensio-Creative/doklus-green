@@ -2,13 +2,17 @@
 
 import { stringToSlug } from "@/utils/stringToSlug";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
   const array = ["Real Estate", "Tank Calibration", "Tank Fabrication", "Pressure Testing", "Leak Testing"]
+  const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
 
   const scrollDown = () => {
     window.scrollBy({ top: 600, behavior: "smooth" }); // Scrolls down by 100px smoothly
   };
+
+  const [show, setShow] = useState(false)
 
   return (
     <>
@@ -74,7 +78,7 @@ export default function Home() {
               <img className="w-10 h-10" src="/images/arrow-right.png" alt="" />
             </Link>
           </div>)}
-          <button className="flex mt-10 ml-auto">
+          <button onClick={() => setShow(true)} className="flex mt-10 ml-auto">
             <h2 className="text-sm my-auto mr-4">DISCOVER MORE</h2>
             <img className=" h-4" src="/images/Arrow-1.png" alt="" />
           </button>
@@ -111,6 +115,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {show && <div className="">
+
+        <div className="fixed shadow-md top-0 left-0 right-0 w-full bg-white z-20 blur-3xl h-screen"></div>
+        <div className="fixed lg:w-[80%] mx-auto lg:h-[80vh] my-auto p-10 bg-white z-40 top-0 left-0 right-0 bottom-0">
+          <div className="flex justify-between mb-8">
+            <h2 className="text-[#009C3E]">ALL SERVICES</h2>
+            <div onClick={() => setShow(false)} className="flex cursor-pointer">
+              <h2 className="text-[#009C3E]">CLOSE</h2>
+              <img className="my-auto ml-2" src="/images/Vector-7.png" alt="" />
+            </div>
+          </div>
+          {services.map((single, index) => <div className="flex justify-between border-b border-[#009C3E] py-3">
+            <p className="text-xl">{single}</p>
+            <Link onClick={() => setShow(false)} href={`/services?page=${stringToSlug(single)}`}>
+              <img className="my-auto" src="/images/Arrow-11.png" alt="" />
+            </Link>
+          </div>)}
+        </div>
+      </div>
+      }
     </>
   );
 }
