@@ -1,12 +1,25 @@
-'use client'
 
-import HeroComp from '@/components/HeroComp';
-import { unslug } from '@/utils/stringToSlug';
-import { useSearchParams } from 'next/navigation';
-import React, { Suspense, useEffect, useState } from 'react';
-export const dynamic = "force-dynamic"; // Forces dynamic rendering
+"use client";
 
-const service = () => {
+import HeroComp from "@/components/HeroComp";
+import { unslug } from "@/utils/stringToSlug";
+import { useSearchParams } from "next/navigation";
+import React, { Suspense } from "react";
+
+export const dynamic = "force-dynamic"; // Ensures the page is dynamically rendered
+
+const ServicePage = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ServiceContent />
+    </Suspense>
+  );
+};
+
+const ServiceContent = () => {
+  const searchParams = useSearchParams();
+  const serviceParam = searchParams.get("page");
+
   const services = [
     {
       image: "",
@@ -225,23 +238,22 @@ const service = () => {
     }
   ]
 
-  const searchParams = useSearchParams()
-  const service = searchParams.get("page");
+  const matchedService = services.find(
+    (item) => item.title.toLowerCase() === unslug(serviceParam).toLowerCase()
+  );
 
-  function findTitleInArray() {
-    const matchedItem = services.find(item => item.title.toLowerCase() === unslug(service).toLowerCase());
-    return matchedItem || null; // Return the object if found, otherwise null
+  if (!matchedService) {
+    return <div>Service not found</div>;
   }
 
-
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <HeroComp img={service} text={findTitleInArray().title} />
-      <section className='py-20 px-4 lg:w-[70%] mx-auto'>
-        {findTitleInArray().content}
+    <>
+      <HeroComp img={serviceParam} text={matchedService.title} />
+      <section className="py-20 px-4 lg:w-[70%] mx-auto">
+        {matchedService.content}
       </section>
-    </Suspense>
+    </>
   );
 };
 
-export default service;
+export default ServicePage;
