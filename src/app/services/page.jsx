@@ -4,6 +4,7 @@ import HeroComp from '@/components/HeroComp';
 import { unslug } from '@/utils/stringToSlug';
 import { useSearchParams } from 'next/navigation';
 import React, { Suspense, useEffect, useState } from 'react';
+export const dynamic = "force-dynamic"; // Forces dynamic rendering
 
 const service = () => {
   const services = [
