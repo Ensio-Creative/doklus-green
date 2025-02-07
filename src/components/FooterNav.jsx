@@ -75,7 +75,7 @@ const FooterNav = () => {
             © COPYRIGHT {new Date().getFullYear()} DOKLUS GREEN SOURCE LIMITED. ALL RIGHTS RESREVED.
           </div>
           <div className="sm:mt-4">
-            DESIGNED BY ENSIO CREATIVE
+            <a href="https://www.instagram.com/ensiocreative/" target="_blank">DESIGNED BY ENSIO CREATIVE</a>
           </div>
         </div>
       </div>

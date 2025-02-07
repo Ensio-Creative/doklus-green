@@ -6,7 +6,7 @@ const contact = () => {
   return (
     <>
       <HeroComp img={"contact-hero"} text={"Contact us"} />
-      <section className='lg:flex text-[#001008] justify-between lg:p-20 p-4'>
+      <section className='lg:flex text-[#001008] justify-between lg:p-20 p-4 sm:mt-10'>
         <div className='lg:w-[45%]'>
           <p className='lg:text-xl mb-10'>Whether you have questions about our services, need support, or want to share your feedback, we can’t wait to hear from you.
           </p>
@@ -63,7 +63,7 @@ const contact = () => {
           </div>
         </div>
       </section>
-      <section className='mb-20 w-full'>
+      <section className='mb-20 sm:mt-10 w-full'>
         <GoogleMapEmbed />
       </section>
     </>

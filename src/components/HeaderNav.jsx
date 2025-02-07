@@ -57,18 +57,18 @@ const HeaderNav = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden border-t border-[#E1E1E1] bg-white z-10 h-full p-4 space-y-3 fixed top-16 left-0 w-full">
-          <div className="border-b border-[#009C3E] py-4 text-xl">
-            <Link href="/" onClick={() => setIsOpen(!isOpen)} className="text-[#001008]">
+          <div className="border-b border-[#009C3E] overflow-hidden py-4 text-xl">
+            <Link href="/" onClick={() => setIsOpen(!isOpen)} className="text-[#001008] overflow-hidden">
               <h2>HOME</h2>
             </Link>
           </div>
-          <div className="border-b border-[#009C3E] py-4 text-xl">
-            <Link onClick={() => setIsOpen(!isOpen)} href="/about" className="text-[#001008]">
+          <div className="border-b border-[#009C3E] overflow-hidden py-4 text-xl">
+            <Link onClick={() => setIsOpen(!isOpen)} href="/about" className="text-[#001008] overflow-hidden">
               <h2>ABOUT US</h2>
             </Link>
           </div>
-          <div className="border-b border-[#009C3E] py-4 text-xl">
-            <a onClick={() => setShow(!show)} href="#" className="text-[#001008] flex">
+          <div className="border-b border-[#009C3E] overflow-hidden py-4 text-xl">
+            <a onClick={() => setShow(!show)} href="#" className="text-[#001008] overflow-hidden flex">
               <h2>SERVICES</h2>
               <img className={`my-auto ml-6 ${show && 'rotate-180'}`} src="/images/caret.png" alt="" />
             </a>
@@ -77,13 +77,13 @@ const HeaderNav = () => {
               {single}
             </Link></div>)}
           </div>
-          <div className="border-b border-[#009C3E] py-4 text-xl">
-            <Link onClick={() => setIsOpen(!isOpen)} href="/sustainability" className="text-[#001008]">
+          <div className="border-b border-[#009C3E] py-4 text-xl overflow-hidden">
+            <Link onClick={() => setIsOpen(!isOpen)} href="/sustainability" className="text-[#001008] overflow-hidden">
               <h2>SUSTAINABILITY</h2>
             </Link>
           </div>
-          <div className="border-b border-[#009C3E] py-4 text-xl">
-            <Link onClick={() => setIsOpen(!isOpen)} href="/contact" className="text-[#001008]">
+          <div className="border-b border-[#009C3E] py-4 text-xl overflow-hidden">
+            <Link onClick={() => setIsOpen(!isOpen)} href="/contact" className="text-[#001008] overflow-hidden">
               <h2>CONTACT  US</h2>
             </Link>
           </div>

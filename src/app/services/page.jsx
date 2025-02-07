@@ -182,12 +182,12 @@ const ServiceContent = () => {
             Over the years, we have completed more than 100 projects, establishing ourselves as a household name in the field of environmental impact assessment. This impressive track record is a testament to the expertise and dedication of our team of trained professionals. Our experienced staff brings a wealth of knowledge to each project, ensuring that every assessment is conducted with the highest standards of professionalism and technical acumen. As we continue to grow and evolve, we remain committed to providing top-tier environmental assessment services that contribute to responsible development in the oil and gas sector.
           </p>
           <h2 className='my-6 text-[#009C3E]'>ENVIRONMENTAL ASSESSMENT / REPORT PROJECTS</h2>
-          <div className='flex justify-between mb-6'>
-            <img src="/images/assesment/environmental-assessment-1.png" alt="" />
+          <div className='lg:flex justify-between mb-6'>
+            <img src="/images/assesment/environmental-assessment-1.png" className="sm:mb-6" alt="" />
             <img src="/images/assesment/environmental-assessment-2.png" alt="" />
           </div>
-          <div className='flex mt-10 justify-between'>
-            <img src="/images/assesment/environmental-assessment-3.png" alt="" />
+          <div className='lg:flex lg:mt-10 justify-between'>
+            <img src="/images/assesment/environmental-assessment-3.png" className="sm:mb-6" alt="" />
             <img src="/images/assesment/environmental-assessment-4.png" alt="" />
           </div>
         </div>

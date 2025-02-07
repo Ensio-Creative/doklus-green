@@ -19,7 +19,7 @@ export default function Home() {
       <section className="relative">
         <img className="sm:h-[80vh] object-cover" src="/images/doklus-green-hero-section.png" alt="" />
         <div className="absolute top-0 left-0 right-0 w-full h-full bg-[#001008] opacity-[75%]"></div>
-        <div className="absolute lg:top-72 top-40 lg:w-[60%] lg:left-20 left-4">
+        <div className="absolute lg:top-72 top-56 lg:w-[60%] lg:left-20 left-4">
           <h2 className=" text-white lg:text-5xl overflow-hidden text-3xl">Transforming needs into
             solutions across oil and
             gas and real estate</h2>
@@ -32,11 +32,11 @@ export default function Home() {
       </section>
       <section className="lg:p-20 p-4">
         <div className="lg:flex justify-between">
-          <h2 className="text-[#009C3E]">WELCOME TO DOKLUS GREEN</h2>
+          <h2 className="text-[#009C3E] sm:my-6">WELCOME TO DOKLUS GREEN</h2>
           <div className="lg:w-[60%]">
             <p className="lg:text-xl">At Doklus Green, we maximize value and drive
               growth through innovative solutions and services with a proven track record of excellence that
-              delivers unparalled results for ur clients.</p>
+              delivers unparalled results for our clients.</p>
           </div>
         </div>
         <div id="commitment" className="text-center bg-[#009C3E] text-white lg:p-20 p-6 mt-20 text-center">
@@ -72,7 +72,7 @@ export default function Home() {
           {array.map((single, index) => <div className="flex justify-between border-b border-[#009C3E] py-3">
             <div className="lg:w-1/2 w-[80%] flex justify-between">
               <p className="lg:text-4xl text-lg overflow-hidden  font-medium">0{index + 1}</p>
-              <p className="lg:text-4xl text-lg overflow-hidden  w-full sm:ml-4 lg:w-80 font-medium">{single}</p>
+              <p className="lg:text-4xl text-lg overflow-hidden w-[80%] sm:ml-4 lg:w-80 font-medium">{single}</p>
             </div>
             <Link href={`/services?page=${stringToSlug(single)}`}>
               <img className="w-10 h-10" src="/images/arrow-right.png" alt="" />
@@ -98,7 +98,7 @@ export default function Home() {
         <img src="/images/doklus-green-home-sustainability.png" alt="" />
       </section>
       <section className="lg:px-20 px-4 pb-20">
-        <div className="lg:w-[30%] text-center mx-auto">
+        <div className="lg:w-[30%] text-center mx-auto sm:mt-6">
           <h2 className="mb-4 text-[#009C3E]">SOME OF OUR CLIENTS</h2>
           <p className="lg:text-xl">Our clients are top players both in the public and
             private sectors.</p>
