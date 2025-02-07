@@ -11,8 +11,8 @@ const HeaderNav = () => {
   const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
 
   return (
-    <header className="bg-white fixed w-full top-0 left-0 z-10">
-      <div className="container lg:px-14 mx-auto flex justify-between items-center p-4">
+    <header className="bg-white  fixed w-full top-0 left-0 z-10">
+      <div className="container lg:px-14 mx-auto flex justify-between items-center lg:h-[90px] p-4">
         {/* Logo */}
 
         <Link href={'/'}>
@@ -48,7 +48,7 @@ const HeaderNav = () => {
         </button>
       </div>
 
-      {show && <div className="lg:fixed border-t border-[#E1E1E1]  sm:hidden left-0 right-0 top-16 grid grid-cols-4 gap-4 w-full bg-white px-20 py-10 z-30">
+      {show && <div className="lg:fixed border-t border-[#E1E1E1] mt-4 sm:hidden left-0 right-0 top-16 grid grid-cols-4 gap-4 w-full bg-white px-20 py-12 z-30">
         {services.map((single, index) => <div key={index} className="py-4 border-b border-[#009C3E]">
           <Link onClick={() => setShow(!show)} href={`/services?page=${stringToSlug(single)}`}><h2>{single}</h2></Link>
         </div>)}

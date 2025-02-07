@@ -16,6 +16,7 @@ const ServicePage = () => {
   );
 };
 
+
 const ServiceContent = () => {
   const searchParams = useSearchParams();
   const serviceParam = searchParams.get("page");
@@ -129,16 +130,16 @@ const ServiceContent = () => {
 
           We offer a wide range of LPG and PMS tank fabrication services, including:
           <ul className='list-disc'>
-            <li><strong>Custom tank design</strong>: We can create tanks of various sizes and specifications to suit your specific requirements.</li>
-            <li>
+            <li className="my-1"><strong>Custom tank design</strong>: We can create tanks of various sizes and specifications to suit your specific requirements.</li>
+            <li className="my-1">
               <strong>Tank modification</strong>
               : We can modify existing tanks to improve their functionality or adapt them to new applications.
             </li>
-            <li>
+            <li className="my-1">
               <strong>Tank repair</strong>
               : We can repair damaged or worn-out tanks to restore their original condition.
             </li>
-            <li>
+            <li className="my-1">
               <strong> Tank installation</strong>
               : Our experienced technicians can install your new or repaired tanks safely and efficiently.
             </li>
@@ -154,7 +155,7 @@ const ServiceContent = () => {
 
           If you need high-quality LPG or PMS tank fabrication services, look no further than Doklus Green. Contact us today to discuss your specific requirements and receive a free quote. We are confident that our expertise and commitment to excellence will exceed your expectations.
 
-          <h2 className='my-6 text-[#009C3E]'>TANK FABRICATION PROJECTS</h2>
+          <h2 className='mt-10 mb-6 text-[#009C3E]'>TANK FABRICATION PROJECTS</h2>
           <img src="/images/fabrication/tank-fabrication-1.png" className='mb-6 w-full' alt="" />
           <img src="/images/fabrication/tank-fabrication-2.png" className='mb-6 w-full' alt="" />
           <img src="/images/fabrication/tank-fabrication-3.png" className='mb-6 w-full' alt="" />
@@ -181,7 +182,7 @@ const ServiceContent = () => {
             <br /> <br />
             Over the years, we have completed more than 100 projects, establishing ourselves as a household name in the field of environmental impact assessment. This impressive track record is a testament to the expertise and dedication of our team of trained professionals. Our experienced staff brings a wealth of knowledge to each project, ensuring that every assessment is conducted with the highest standards of professionalism and technical acumen. As we continue to grow and evolve, we remain committed to providing top-tier environmental assessment services that contribute to responsible development in the oil and gas sector.
           </p>
-          <h2 className='my-6 text-[#009C3E]'>ENVIRONMENTAL ASSESSMENT / REPORT PROJECTS</h2>
+          <h2 className='mt-10 mb-6 text-[#009C3E]'>ENVIRONMENTAL ASSESSMENT / REPORT PROJECTS</h2>
           <div className='lg:flex justify-between mb-6'>
             <img src="/images/assesment/environmental-assessment-1.png" className="sm:mb-6" alt="" />
             <img src="/images/assesment/environmental-assessment-2.png" alt="" />
@@ -229,7 +230,7 @@ const ServiceContent = () => {
             <br /> <br />
             The strategic location of our training center offers additional benefits to our clients. Its proximity to the Enugu DPR office facilitates smooth coordination and communication with regulatory authorities. Furthermore, the availability of nearby hotel facilities provides convenient accommodation options for out-of-town participants, enhancing the overall comfort and convenience of the training experience. These factors combine to create a comprehensive and user-friendly training environment that supports the professional development of individuals in the downstream Oil and Gas sector.
           </p>
-          <h2 className='text-[#009C3E] my-6'>MISTDO TRAINING SESSION</h2>
+          <h2 className='text-[#009C3E] mt-10 mb-6'>MISTDO TRAINING SESSION</h2>
           <img src="/images/training/MISTDO-Training-1.png" className='mb-6 w-full' alt="" />
           <img src="/images/training/MISTDO-Training-2.png" className='mb-6 w-full' alt="" />
           <img src="/images/training/MISTDO-Training-3.png" className='w-full' alt="" />

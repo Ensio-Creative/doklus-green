@@ -23,10 +23,10 @@ const about = () => {
         </div>
       </section>
       <section className='lg:mx-20 mx-4 mb-20'>
-        <div className="text-center bg-[#009C3E] text-white lg:p-20 p-6 mt-20 text-center">
-          <h2>OUR MISSION</h2>
+        <div className="text-center lg:h-[450px] bg-[#009C3E] text-white lg:p-20 p-6 mt-20 text-center">
+          <h2 className='lg:mt-10'>OUR MISSION</h2>
           <div className="lg:w-1/2 mx-auto mt-4">
-            <p className="lg:text-xl">To provide excellent and comprehensive business solutions and services, driven by technology, innovation, and well-trained personnel, to our clients: promoting environmental sustainability through the process.</p>
+            <p className="lg:text-[22px]">To provide excellent and comprehensive business solutions and services, driven by technology, innovation, and well-trained personnel, to our clients: promoting environmental sustainability through the process.</p>
           </div>
         </div>
       </section>
@@ -35,25 +35,25 @@ const about = () => {
           <h2 className='text-[#009C3E]'>MANAGEMENT TEAM</h2>
         </div>
         <div className='grid lg:grid-cols-3 gap-6 mt-10'>
-          <div className='relative lg:h-[80vh] overflow-hidden'>
-            <img src="/images/team-1.png" className='w-full' alt="" />
-            <div className='absolute p-4 text-center lg:top-[410px] sm:bottom-0 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
+          <div className='relative overflow-hidden'>
+            <img src="/images/team-1.png" className='w-full  mb-10' alt="" />
+            <div className='absolute z-20  p-4 text-center lg:top-[85%] sm:bottom-0 z-10 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
               <h2>Ifeyinwa Francisca Onwe</h2>
-              <p className='text-[#555555]'>MANAGING DIRECTOR</p>
+              <p className='text-[#555555] text-xs'>MANAGING DIRECTOR</p>
             </div>
           </div>
-          <div className='relative lg:h-[80vh] overflow-hidden'>
+          <div className='relative overflow-hidden'>
             <img src="/images/team-2.png" className='w-full' alt="" />
-            <div className='absolute p-4 text-center lg:top-[410px] sm:bottom-0 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
+            <div className='absolute p-4 text-center lg:top-[85%] sm:bottom-0 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
               <h2>Dr. Ikenna Ezeasor</h2>
-              <p className='text-[#555555]'>OPERATIONAL MANAGER</p>
+              <p className='text-[#555555] text-xs'>OPERATIONAL MANAGER</p>
             </div>
           </div>
-          <div className='relative lg:h-[80vh] overflow-hidden'>
+          <div className='relative overflow-hidden'>
             <img src="/images/team-2.png" className='w-full' alt="" />
-            <div className='absolute p-4 text-center lg:top-[410px] sm:bottom-0 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
+            <div className='absolute p-4 text-center lg:top-[85%] sm:bottom-0 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
               <h2>Chikamso David Onwe</h2>
-              <p className='text-[#555555]'>HEAD HUMAN RESOURCE</p>
+              <p className='text-[#555555] text-xs'>HEAD HUMAN RESOURCE</p>
             </div>
           </div>
         </div>

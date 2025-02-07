@@ -18,9 +18,9 @@ export default function Home() {
     <>
       <section className="relative">
         <img className="sm:h-[80vh] object-cover" src="/images/doklus-green-hero-section.png" alt="" />
-        <div className="absolute top-0 left-0 right-0 w-full h-full bg-[#001008] opacity-[75%]"></div>
+        <div className="absolute top-0 left-0 right-0 w-full h-full bg-[#001008] opacity-[60%]"></div>
         <div className="absolute lg:top-72 top-56 lg:w-[60%] lg:left-20 left-4">
-          <h2 className=" text-white lg:text-5xl overflow-hidden text-3xl">Transforming needs into
+          <h2 className=" text-white lg:text-5xl pb-2 overflow-hidden text-3xl">Transforming needs into
             solutions across oil and
             gas and real estate</h2>
 
@@ -34,15 +34,15 @@ export default function Home() {
         <div className="lg:flex justify-between">
           <h2 className="text-[#009C3E] sm:my-6">WELCOME TO DOKLUS GREEN</h2>
           <div className="lg:w-[60%]">
-            <p className="lg:text-xl">At Doklus Green, we maximize value and drive
+            <p className="lg:text-[25px]">At Doklus Green, we maximize value and drive
               growth through innovative solutions and services with a proven track record of excellence that
               delivers unparalled results for our clients.</p>
           </div>
         </div>
-        <div id="commitment" className="text-center bg-[#009C3E] text-white lg:p-20 p-6 mt-20 text-center">
-          <h2>OUR COMMITMENT</h2>
+        <div id="commitment" className="text-center lg:h-[450px] bg-[#009C3E]  text-white lg:p-20 p-6 mt-20 text-center">
+          <h2 className="lg:mt-10">OUR COMMITMENT</h2>
           <div className="lg:w-1/2 mx-auto mt-4">
-            <p className="lg:text-xl">We strive to reduce our environmental impact
+            <p className="lg:text-[22px]">We strive to reduce our environmental impact
               by adopting sustainable practices, managing
               resources efficiently, and making responsible choices by achieving a balance between operational excellence and environmental responsibility.</p>
           </div>
@@ -62,14 +62,14 @@ export default function Home() {
         <img className="lg:w-[45%] sm:mt-10" src="/images/about.png" alt="" />
       </section>
       <section className="lg:p-20 p-4">
-        <div className="lg:w-[30%]">
+        <div className="lg:w-[40%]">
           <h2 className="text-[#009C3E] mb-4">DISCOVER OUR SERVICES</h2>
           <p className="lg:text-xl mb-4">We offer a wide range of services that
             consistently solve the needs of our
             clients.</p>
         </div>
         <div className="border-t border-[#009C3E] mt-10">
-          {array.map((single, index) => <div className="flex justify-between border-b border-[#009C3E] py-3">
+          {array.map((single, index) => <div className="flex justify-between border-b border-[#009C3E] py-6">
             <div className="lg:w-1/2 w-[80%] flex justify-between">
               <p className="lg:text-4xl text-lg overflow-hidden  font-medium">0{index + 1}</p>
               <p className="lg:text-4xl text-lg overflow-hidden w-[80%] sm:ml-4 lg:w-80 font-medium">{single}</p>
@@ -84,8 +84,8 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="lg:p-20 p-4 text-[#001008] lg:flex">
-        <div className="mr-4 bg-[#AFE67F] p-10 w-full">
+      <section className="lg:px-20 lg:pb-20 p-4 text-[#001008] lg:flex">
+        <div className="mr-4 bg-[#AFE67F] sm:w-full px-10 py-20 lg:w-[76%]">
           <h2>SUSTAINABILITY</h2>
           <p className="lg:text-xl mt-6">We are committed to integrating sustainability into our operations, prioritizing environment, health and safety while upholding transparency and accountability at all levels.</p>
           <Link href={'/sustainability'}>
@@ -95,7 +95,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <img src="/images/doklus-green-home-sustainability.png" alt="" />
+        <img className="lg:h-[400px] lg:w-[40%] object-cover" src="/images/doklus-green-home-sustainability.png" alt="" />
       </section>
       <section className="lg:px-20 px-4 pb-20">
         <div className="lg:w-[30%] text-center mx-auto sm:mt-6">

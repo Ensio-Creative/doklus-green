@@ -24,10 +24,10 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">OUR COMPANY</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              <li><Link href="/about">About us</Link></li>
-              <li><a href="#">Services</a></li>
-              <li><Link href="/sustainability">Sustainability</Link></li>
-              <li><Link href="/contact">Contact us</Link></li>
+              <li className="py-1"><Link href="/about">About us</Link></li>
+              <li className="py-1"><a href="#">Services</a></li>
+              <li className="py-1"><Link href="/sustainability">Sustainability</Link></li>
+              <li className="py-1"><Link href="/contact">Contact us</Link></li>
             </ul>
           </div>
 
@@ -35,7 +35,7 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">QUICK LINKS</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              {services.slice(0, 5).map((single, index) => <li key={index}><Link href={`/services?page=${stringToSlug(single)}`}>{single}</Link></li>)}
+              {services.slice(0, 5).map((single, index) => <li className="py-1" key={index}><Link href={`/services?page=${stringToSlug(single)}`}>{single}</Link></li>)}
               {/* <li><a href="#">Tank Calibration</a></li>
               <li><a href="#">Tank Fabrication</a></li>
               <li><a href="#">Pressure Testing</a></li>
@@ -47,7 +47,7 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">QUICK LINKS</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              {services.slice(5, services.length).map((single, index) => <li key={index}><Link href={`/services?page=${stringToSlug(single)}`}>{single}</Link></li>)}
+              {services.slice(5, services.length).map((single, index) => <li className="py-1" key={index}><Link href={`/services?page=${stringToSlug(single)}`}>{single}</Link></li>)}
 
               {/* <li><a href="#">Environmental Assessment</a></li>
               <li><a href="#">Procurement</a></li>
@@ -61,20 +61,20 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">CONNECT WITH US</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">X (Twitter)</a></li>
-              <li><a href="#">Linkedin</a></li>
-              <li><a href="#">Instagram</a></li>
+              <li className="py-1"><a href="#">Facebook</a></li>
+              <li className="py-1"><a href="#">X (Twitter)</a></li>
+              <li className="py-1"><a href="#">Linkedin</a></li>
+              <li className="py-1"><a href="#">Instagram</a></li>
             </ul>
           </div>
         </div>
 
         {/* Footer Bottom */}
         <div className="lg:flex justify-between border-t border-[#FFFFFF33] mt-10 text-white text-xs pt-10">
-          <div>
+          <div className="text-[10px]">
             © COPYRIGHT {new Date().getFullYear()} DOKLUS GREEN SOURCE LIMITED. ALL RIGHTS RESREVED.
           </div>
-          <div className="sm:mt-4">
+          <div className="sm:mt-4 text-[10px]">
             <a href="https://www.instagram.com/ensiocreative/" target="_blank">DESIGNED BY ENSIO CREATIVE</a>
           </div>
         </div>
