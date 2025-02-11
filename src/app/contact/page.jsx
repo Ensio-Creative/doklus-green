@@ -2,6 +2,12 @@ import GoogleMapEmbed from '@/components/GoogleMap';
 import HeroComp from '@/components/HeroComp';
 import React from 'react';
 
+export const metadata = {
+  title: "Contact | Doklus Green Source Limited ",
+  description: "Doklus Green Source Limited",
+};
+
+
 const contact = () => {
   return (
     <>

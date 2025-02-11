@@ -1,6 +1,13 @@
 import HeroComp from '@/components/HeroComp';
 import React from 'react';
 
+
+export const metadata = {
+  title: "About | Doklus Green Source Limited ",
+  description: "Doklus Green Source Limited",
+};
+
+
 const about = () => {
   return (
     <>

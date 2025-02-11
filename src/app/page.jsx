@@ -4,6 +4,8 @@ import { stringToSlug } from "@/utils/stringToSlug";
 import Link from "next/link";
 import { useState } from "react";
 
+
+
 export default function Home() {
   const array = ["Real Estate", "Tank Calibration", "Tank Fabrication", "Pressure Testing", "Leak Testing"]
   const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]

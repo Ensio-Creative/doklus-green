@@ -2,6 +2,11 @@ import Accordion from '@/components/Accordion';
 import HeroComp from '@/components/HeroComp';
 import React from 'react';
 
+export const metadata = {
+  title: "Sustainability | Doklus Green Source Limited ",
+  description: "Doklus Green Source Limited",
+};
+
 const sustainability = () => {
   return (
     <>
