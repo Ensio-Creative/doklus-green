@@ -3,6 +3,7 @@
 
 import HeroComp from "@/components/HeroComp";
 import { unslug } from "@/utils/stringToSlug";
+import Head from "next/head";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
 
@@ -16,7 +17,6 @@ const ServicePage = () => {
     </Suspense>
   );
 };
-
 
 
 const ServiceContent = () => {
@@ -124,38 +124,21 @@ const ServiceContent = () => {
     },
     {
       image: "",
-      title: "Tank Fabrication",
+      title: "Fabrication",
       content: (
         <div>
-          We provide high-quality LPG and petrol tanks fabrication, ensuring safety, durability, and compliance with industry standards. Our team of skilled craftsmen utilizes advanced techniques and premium materials to deliver exceptional products that meet the diverse needs of our clients.
+          We provide high-quality tank and pipeline fabrication services tailored to meet the demands of the oil and gas, industrial, and manufacturing sectors. With a focus on precision engineering, safety, and durability, our engineers ensures that every fabricated tank and pipeline meets both national and international standards. Whether for storage, transportation, or processing, our solutions are designed to optimize efficiency, minimize risks, and enhance operational performance.
           <br /> <br />
 
-          We offer a wide range of LPG and PMS tank fabrication services, including:
-          <ul className='list-disc'>
-            <li className="my-1"><strong>Custom tank design</strong>: We can create tanks of various sizes and specifications to suit your specific requirements.</li>
-            <li className="my-1">
-              <strong>Tank modification</strong>
-              : We can modify existing tanks to improve their functionality or adapt them to new applications.
-            </li>
-            <li className="my-1">
-              <strong>Tank repair</strong>
-              : We can repair damaged or worn-out tanks to restore their original condition.
-            </li>
-            <li className="my-1">
-              <strong> Tank installation</strong>
-              : Our experienced technicians can install your new or repaired tanks safely and efficiently.
-            </li>
-          </ul>
-
+          Our tank fabrication services cover a wide range of applications, including above-ground storage tanks (ASTs), underground storage tanks (USTs), pressure vessels, and custom-designed tanks for various industries. We utilize high-grade materials such as carbon steel, stainless steel, and alloys to ensure durability and resistance to corrosion. With advanced welding techniques, non-destructive testing (NDT), and strict quality control, we guarantee tanks that can withstand extreme conditions while maintaining structural integrity.
           <br /> <br />
 
-          Doklus Green is committed to providing safe and reliable LPG and PMS tanks. We adhere to strict safety regulations and quality control measures to ensure that our products meet the highest standards of excellence. Our tanks are designed to withstand harsh conditions and provide long-lasting performance.
+          For pipeline fabrication, we offer custom pipeline manufacturing, installation, and maintenance services for oil and gas, water distribution, and industrial applications. Our team is skilled in fabricating pipelines for both onshore and offshore environments, ensuring leak-proof, high-pressure-resistant, and corrosion-resistant pipelines. We adhere to industry regulations, such as ASME, API, and ISO standards, to ensure the safety and reliability of all pipeline systems.
           <br /> <br />
 
-          We understand the importance of timely delivery and exceptional customer service. Our team is dedicated to meeting your deadlines and providing personalized support throughout the fabrication process. We are committed to building strong relationships with our clients based on trust, reliability, and mutual satisfaction.
+          At Doklus Green Source Limited, we prioritize safety, efficiency, and environmental sustainability in all our fabrication projects. Our fabrication process incorporates cutting-edge technology, automation, and rigorous testing to reduce material waste, improve precision, and minimize downtime. We also conduct comprehensive inspections and quality assurance procedures to ensure that all tanks and pipelines meet regulatory compliance before deployment.
           <br /> <br />
-
-          If you need high-quality LPG or PMS tank fabrication services, look no further than Doklus Green. Contact us today to discuss your specific requirements and receive a free quote. We are confident that our expertise and commitment to excellence will exceed your expectations.
+          With acommitment to excellence and customer satisfaction, we work closely with our clients to deliver customized fabrication solutions that align with their operational needs. Whether you require new installations, upgrades, or repairs, we have the expertise and capacity to handle projects of any scale.
 
           <h2 className='mt-10 mb-6 text-[#009C3E]'>TANK FABRICATION PROJECTS</h2>
           <img src="/images/fabrication/tank-fabrication-1.png" className='mb-6 w-full' alt="" />
@@ -174,7 +157,7 @@ const ServiceContent = () => {
       content: (
         <div>
           <p>
-            We conduct comprehensive Environmental Impact Studies and Assessments for oil and gas facilities throughout the country. These studies are crucial for the development and ongoing operations of such facilities, ensuring they meet all environmental regulations and minimize their ecological footprint. Our approach is thorough and meticulous, covering all aspects of potential environmental impact from initial construction to long-term operations.
+            We conduct comprehensive Environmental Impact Studies and Assessments (EIA, EER, EAR, PIAR) for oil and gas facilities throughout the country. These studies are crucial for the development and ongoing operations of such facilities, ensuring they meet all environmental regulations and minimize their ecological footprint. Our approach is thorough and meticulous, covering all aspects of potential environmental impact from initial construction to long-term operations.
             <br /> <br />
 
             Upon engagement, we prioritize arranging on-site visits as swiftly as possible. This hands-on approach allows our team to gain firsthand knowledge of the project site, its surrounding ecosystem, and any unique environmental factors that need to be considered. These site visits form the foundation of our assessment process, enabling us to gather essential data and observations that inform our subsequent analysis and recommendations.
@@ -249,9 +232,10 @@ const ServiceContent = () => {
     return <div>Service not found</div>;
   }
 
+
   return (
     <>
-
+      <title>{`${matchedService.title} | Doklus Green Source Limited`}</title>
       <HeroComp img={serviceParam} text={matchedService.title} />
       <section className="py-20 px-4 lg:w-[70%] mx-auto">
         {matchedService.content}

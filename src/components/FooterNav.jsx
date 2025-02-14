@@ -4,7 +4,7 @@ import React from "react";
 // import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const FooterNav = () => {
-  const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
+  const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
 
   return (
     <footer className="bg-[#001008] lg:px-20 py-10">

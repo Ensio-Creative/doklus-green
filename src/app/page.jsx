@@ -7,8 +7,8 @@ import { useState } from "react";
 
 
 export default function Home() {
-  const array = ["Real Estate", "Tank Calibration", "Tank Fabrication", "Pressure Testing", "Leak Testing"]
-  const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Tank Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
+  const array = ["Real Estate", "Tank Calibration", "Fabrication", "Pressure Testing", "Leak Testing"]
+  const services = ["Real Estate", "Tank Calibration", "Pressure Testing", "Leak Testing", "Project Management", "Procurement", "Fabrication", "Environmental Assessment", "SOP Report", "MISTDO Training"]
 
   const scrollDown = () => {
     window.scrollBy({ top: 600, behavior: "smooth" }); // Scrolls down by 100px smoothly
@@ -18,6 +18,7 @@ export default function Home() {
 
   return (
     <>
+      <title>Doklus Green Source Limited</title>
       <section className="relative">
         <img className="sm:h-[80vh] object-cover" src="/images/doklus-green-hero-section.png" alt="" />
         <div className="absolute top-0 left-0 right-0 w-full h-full bg-[#001008] opacity-[60%]"></div>
@@ -105,9 +106,12 @@ export default function Home() {
           <p className="lg:text-xl">Our clients are top players both in the public and
             private sectors.</p>
         </div>
-        <div className="grid gap-3 mt-10 lg:grid-cols-3 grid-cols-1">
+        <div className="grid gap-3 mt-10 lg:grid-cols-4 grid-cols-1">
           <div className="bg-[#F9F9F9] border-t border-[#009C3E]">
             <img className="mx-auto my-auto" src="/images/Government-of-Enugu-State-Logo.png" alt="" />
+          </div>
+          <div className="bg-[#F9F9F9] border-t border-[#009C3E]">
+            <img className="mx-auto my-8" src="/images/federal-ministry-of-environment-logo.png" alt="" />
           </div>
           <div className="bg-[#F9F9F9] border-t border-[#009C3E]">
             <img className="mx-auto my-6" src="/images/DPR-Logo.png" alt="" />

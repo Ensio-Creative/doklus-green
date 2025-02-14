@@ -12,10 +12,10 @@ import FooterNav from "@/components/FooterNav";
 //   subsets: ["latin"],
 // });
 
-export const metadata = {
-  title: "Doklus Green Source Limited",
-  description: "Doklus Green Source Limited",
-};
+// export const metadata = {
+//   title: "Doklus Green Source Limited",
+//   description: "Doklus Green Source Limited",
+// };
 
 export default function RootLayout({ children }) {
   return (
