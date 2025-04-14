@@ -61,10 +61,10 @@ const FooterNav = () => {
           <div>
             <h2 className="mb-3 text-white">CONNECT WITH US</h2>
             <ul className="space-y-2 text-sm text-[#009C3E]">
-              <li className="py-1"><a href="#">Facebook</a></li>
-              <li className="py-1"><a href="#">X (Twitter)</a></li>
+              <li className="py-1"><a href="https://facebook.com/doklusgreensl" target="_blank">Facebook</a></li>
+              <li className="py-1"><a href="https://x.com/doklusgreensl" target="_blank">X (Twitter)</a></li>
               <li className="py-1"><a href="#">Linkedin</a></li>
-              <li className="py-1"><a href="#">Instagram</a></li>
+              <li className="py-1"><a href="https://instagram.com/doklusgreensl" target="_blank">Instagram</a></li>
             </ul>
           </div>
         </div>
