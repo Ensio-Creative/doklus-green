@@ -114,7 +114,7 @@ export default function Home() {
             <img className="mx-auto my-8" src="/images/federal-ministry-of-environment-logo.png" alt="" />
           </div>
           <div className="bg-[#F9F9F9] border-t border-[#009C3E]">
-            <img className="mx-auto my-6" src="/images/DPR-Logo.png" alt="" />
+            <img className="mx-auto my-6" src="/images/Nmdpra-new-logo.png" alt="" />
           </div>
           <div className="bg-[#F9F9F9] border-t border-[#009C3E]">
             <img className="mx-auto my-8" src="/images/Juhel-Logo.png" alt="" />

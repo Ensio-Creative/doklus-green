@@ -50,14 +50,14 @@ const about = () => {
             </div>
           </div>
           <div className='relative overflow-hidden'>
-            <img src="/images/team-2.png" className='w-full' alt="" />
+            <img src="/images/user.png" className='w-full' alt="" />
             <div className='absolute p-4 text-center lg:top-[85%] sm:bottom-0 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
               <h2>Dr. Ikenna Ezeasor</h2>
               <p className='text-[#555555] text-xs'>OPERATIONAL MANAGER</p>
             </div>
           </div>
           <div className='relative overflow-hidden'>
-            <img src="/images/team-2.png" className='w-full' alt="" />
+            <img src="/images/user.png" className='w-full' alt="" />
             <div className='absolute p-4 text-center lg:top-[85%] sm:bottom-0 shadow-md w-[80%] left-0 right-0 mx-auto bg-white'>
               <h2>Chikamso David Onwe</h2>
               <p className='text-[#555555] text-xs'>HEAD HUMAN RESOURCE</p>
